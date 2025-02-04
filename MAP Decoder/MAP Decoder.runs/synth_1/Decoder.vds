@@ -1,0 +1,566 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue May 21 02:52:06 2024
+# Process ID: 4704
+# Current directory: D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.runs/synth_1
+# Command line: vivado.exe -log Decoder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Decoder.tcl
+# Log file: D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.runs/synth_1/Decoder.vds
+# Journal file: D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Decoder.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 473.727 ; gain = 185.086
+Command: synth_design -top Decoder -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15736 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1022.426 ; gain = 234.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:24]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2972]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.runs/synth_1/.Xil/Vivado-4704-LAPTOP-Q6AFSJP8/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (1#1) [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.runs/synth_1/.Xil/Vivado-4704-LAPTOP-Q6AFSJP8/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ILA'. This will prevent further optimization [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2972]
+WARNING: [Synth 8-6014] Unused sequential element Q01_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:220]
+WARNING: [Synth 8-6014] Unused sequential element Q02_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:221]
+WARNING: [Synth 8-6014] Unused sequential element Q03_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:222]
+WARNING: [Synth 8-6014] Unused sequential element Q11_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:245]
+WARNING: [Synth 8-6014] Unused sequential element Q12_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:246]
+WARNING: [Synth 8-6014] Unused sequential element Q13_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:247]
+WARNING: [Synth 8-6014] Unused sequential element Q21_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:269]
+WARNING: [Synth 8-6014] Unused sequential element Q22_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:270]
+WARNING: [Synth 8-6014] Unused sequential element Q23_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:271]
+WARNING: [Synth 8-6014] Unused sequential element Q31_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:294]
+WARNING: [Synth 8-6014] Unused sequential element Q32_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:295]
+WARNING: [Synth 8-6014] Unused sequential element Q33_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:296]
+WARNING: [Synth 8-6014] Unused sequential element Q41_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:319]
+WARNING: [Synth 8-6014] Unused sequential element Q42_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:320]
+WARNING: [Synth 8-6014] Unused sequential element Q43_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:321]
+WARNING: [Synth 8-6014] Unused sequential element Q51_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:344]
+WARNING: [Synth 8-6014] Unused sequential element Q52_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:345]
+WARNING: [Synth 8-6014] Unused sequential element Q53_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:346]
+WARNING: [Synth 8-6014] Unused sequential element Q61_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:369]
+WARNING: [Synth 8-6014] Unused sequential element Q62_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:370]
+WARNING: [Synth 8-6014] Unused sequential element Q63_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:371]
+WARNING: [Synth 8-6014] Unused sequential element Q71_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:394]
+WARNING: [Synth 8-6014] Unused sequential element Q72_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:395]
+WARNING: [Synth 8-6014] Unused sequential element Q73_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:396]
+WARNING: [Synth 8-6014] Unused sequential element b10_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1653]
+WARNING: [Synth 8-6014] Unused sequential element b11_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1671]
+WARNING: [Synth 8-6014] Unused sequential element b12_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1689]
+WARNING: [Synth 8-6014] Unused sequential element b13_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1708]
+WARNING: [Synth 8-6014] Unused sequential element b14_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1727]
+WARNING: [Synth 8-6014] Unused sequential element b15_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1746]
+WARNING: [Synth 8-6014] Unused sequential element b16_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1765]
+WARNING: [Synth 8-6014] Unused sequential element b17_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1784]
+WARNING: [Synth 8-6014] Unused sequential element b20_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1804]
+WARNING: [Synth 8-6014] Unused sequential element b21_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1821]
+WARNING: [Synth 8-6014] Unused sequential element b22_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1838]
+WARNING: [Synth 8-6014] Unused sequential element b23_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1855]
+WARNING: [Synth 8-6014] Unused sequential element b24_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1873]
+WARNING: [Synth 8-6014] Unused sequential element b25_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1892]
+WARNING: [Synth 8-6014] Unused sequential element b26_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1910]
+WARNING: [Synth 8-6014] Unused sequential element b27_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1927]
+WARNING: [Synth 8-6014] Unused sequential element b30_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1947]
+WARNING: [Synth 8-6014] Unused sequential element b31_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1964]
+WARNING: [Synth 8-6014] Unused sequential element b32_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1981]
+WARNING: [Synth 8-6014] Unused sequential element b33_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1999]
+WARNING: [Synth 8-6014] Unused sequential element b34_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2018]
+WARNING: [Synth 8-6014] Unused sequential element b35_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2037]
+WARNING: [Synth 8-6014] Unused sequential element b36_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2055]
+WARNING: [Synth 8-6014] Unused sequential element b37_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2072]
+WARNING: [Synth 8-6014] Unused sequential element b40_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2092]
+WARNING: [Synth 8-6014] Unused sequential element b41_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2109]
+WARNING: [Synth 8-6014] Unused sequential element b42_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2126]
+WARNING: [Synth 8-6014] Unused sequential element b43_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2144]
+WARNING: [Synth 8-6014] Unused sequential element b44_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2163]
+WARNING: [Synth 8-6014] Unused sequential element b45_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2182]
+WARNING: [Synth 8-6014] Unused sequential element b46_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2200]
+WARNING: [Synth 8-6014] Unused sequential element b47_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2217]
+WARNING: [Synth 8-6014] Unused sequential element b50_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2238]
+WARNING: [Synth 8-6014] Unused sequential element b51_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2255]
+WARNING: [Synth 8-6014] Unused sequential element b52_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2272]
+WARNING: [Synth 8-6014] Unused sequential element b53_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2290]
+WARNING: [Synth 8-6014] Unused sequential element b54_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2309]
+WARNING: [Synth 8-6014] Unused sequential element b55_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2328]
+WARNING: [Synth 8-6014] Unused sequential element b56_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2346]
+WARNING: [Synth 8-6014] Unused sequential element b57_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2363]
+WARNING: [Synth 8-6014] Unused sequential element b60_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2383]
+WARNING: [Synth 8-6014] Unused sequential element b61_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2400]
+WARNING: [Synth 8-6014] Unused sequential element b62_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2417]
+WARNING: [Synth 8-6014] Unused sequential element b63_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2435]
+WARNING: [Synth 8-6014] Unused sequential element b64_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2454]
+WARNING: [Synth 8-6014] Unused sequential element b65_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2473]
+WARNING: [Synth 8-6014] Unused sequential element b66_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2491]
+WARNING: [Synth 8-6014] Unused sequential element b67_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2508]
+WARNING: [Synth 8-6014] Unused sequential element b70_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2528]
+WARNING: [Synth 8-6014] Unused sequential element b71_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2545]
+WARNING: [Synth 8-6014] Unused sequential element b72_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2562]
+WARNING: [Synth 8-6014] Unused sequential element b73_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2579]
+WARNING: [Synth 8-6014] Unused sequential element b74_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2598]
+WARNING: [Synth 8-6014] Unused sequential element b75_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2617]
+WARNING: [Synth 8-6014] Unused sequential element b76_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2635]
+WARNING: [Synth 8-6014] Unused sequential element b77_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2652]
+WARNING: [Synth 8-6014] Unused sequential element n001_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2669]
+WARNING: [Synth 8-6014] Unused sequential element n011_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2670]
+WARNING: [Synth 8-6014] Unused sequential element n021_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2671]
+WARNING: [Synth 8-6014] Unused sequential element n031_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2672]
+WARNING: [Synth 8-6014] Unused sequential element n041_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2673]
+WARNING: [Synth 8-6014] Unused sequential element n051_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2674]
+WARNING: [Synth 8-6014] Unused sequential element n061_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2675]
+WARNING: [Synth 8-6014] Unused sequential element n071_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2676]
+WARNING: [Synth 8-6014] Unused sequential element n101_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2679]
+WARNING: [Synth 8-6014] Unused sequential element n111_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2680]
+WARNING: [Synth 8-6014] Unused sequential element n121_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2681]
+WARNING: [Synth 8-6014] Unused sequential element n131_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2682]
+WARNING: [Synth 8-6014] Unused sequential element n141_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2683]
+WARNING: [Synth 8-6014] Unused sequential element n151_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2684]
+WARNING: [Synth 8-6014] Unused sequential element n161_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2685]
+WARNING: [Synth 8-6014] Unused sequential element n171_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2686]
+WARNING: [Synth 8-6014] Unused sequential element L01_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2692]
+WARNING: [Synth 8-6014] Unused sequential element L11_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2693]
+WARNING: [Synth 8-6014] Unused sequential element n002_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2701]
+WARNING: [Synth 8-6014] Unused sequential element n012_reg was removed.  [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2702]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'a12_reg[8:0]' into 'a11_reg[8:0]' [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:463]
+INFO: [Synth 8-4471] merging register 'a13_reg[8:0]' into 'a11_reg[8:0]' [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:482]
+INFO: [Synth 8-4471] merging register 'a16_reg[8:0]' into 'a15_reg[8:0]' [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:539]
+WARNING: [Synth 8-3936] Found unconnected internal register 'g8_reg' and it is trimmed from '9' to '4' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2954]
+WARNING: [Synth 8-3936] Found unconnected internal register 'L18_reg' and it is trimmed from '9' to '4' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2921]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n148_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2910]
+WARNING: [Synth 8-3936] Found unconnected internal register 'L08_reg' and it is trimmed from '9' to '4' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2920]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n008_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2896]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n048_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2900]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n108_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2906]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n168_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2912]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n028_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2898]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n068_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2902]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n128_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2908]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n118_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2907]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n058_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2901]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n158_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2911]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n018_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2897]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n138_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2909]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n078_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2903]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n178_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2913]
+WARNING: [Synth 8-3936] Found unconnected internal register 'n038_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:2899]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (2#1) [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1098.352 ; gain = 310.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1098.352 ; gain = 310.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1098.352 ; gain = 310.082
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1098.352 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ILA'
+Finished Parsing XDC File [d:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ILA'
+Parsing XDC File [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/constrs_1/new/Constraint.xdc]
+Finished Parsing XDC File [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/constrs_1/new/Constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/constrs_1/new/Constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Decoder_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Decoder_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1197.680 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1197.680 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ILA. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'b07_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1627]
+WARNING: [Synth 8-3936] Found unconnected internal register 'b03_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1551]
+WARNING: [Synth 8-3936] Found unconnected internal register 'b05_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1589]
+WARNING: [Synth 8-3936] Found unconnected internal register 'b01_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1514]
+WARNING: [Synth 8-3936] Found unconnected internal register 'b06_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1608]
+WARNING: [Synth 8-3936] Found unconnected internal register 'b02_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1532]
+WARNING: [Synth 8-3936] Found unconnected internal register 'b04_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1570]
+WARNING: [Synth 8-3936] Found unconnected internal register 'b00_reg' and it is trimmed from '9' to '7' bits. [D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.srcs/sources_1/new/Decoder.v:1496]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 93    
+	   2 Input      7 Bit       Adders := 16    
+	   3 Input      7 Bit       Adders := 16    
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 53    
+	                7 Bit    Registers := 24    
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 86    
+	   2 Input      7 Bit        Muxes := 31    
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 55    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Decoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 93    
+	   2 Input      7 Bit       Adders := 16    
+	   3 Input      7 Bit       Adders := 16    
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 53    
+	                7 Bit    Registers := 24    
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 86    
+	   2 Input      7 Bit        Muxes := 31    
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 55    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'a10_reg[0]' (FD) to 'a17_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a10_reg[1]' (FD) to 'a17_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a10_reg[2]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a10_reg[3]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a10_reg[4]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a10_reg[5]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a10_reg[6]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a10_reg[7]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a10_reg[8]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a11_reg[0]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a11_reg[1]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a11_reg[2]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a11_reg[3]' (FD) to 'a17_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a11_reg[4]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a11_reg[5]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a11_reg[6]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a11_reg[7]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a11_reg[8]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a14_reg[0]' (FD) to 'a17_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a14_reg[1]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a14_reg[2]' (FD) to 'a17_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a14_reg[3]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a14_reg[4]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a14_reg[5]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a14_reg[6]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a14_reg[7]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a14_reg[8]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a15_reg[0]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a17_reg[0]' (FD) to 'a17_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a15_reg[1]' (FD) to 'a17_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a17_reg[1]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a15_reg[2]' (FD) to 'a17_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a17_reg[2]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a15_reg[3]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a17_reg[3] )
+INFO: [Synth 8-3886] merging instance 'a15_reg[4]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a17_reg[4]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a15_reg[5]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a17_reg[5]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a15_reg[6]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a17_reg[6]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a15_reg[7]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a17_reg[7]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a15_reg[8]' (FD) to 'a17_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a17_reg[8] )
+INFO: [Synth 8-3886] merging instance 'a21_reg[0]' (FDE) to 'a25_reg[0]'
+INFO: [Synth 8-3886] merging instance 'a20_reg[0]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a20_reg[1]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a21_reg[1]' (FDE) to 'a21_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a20_reg[2]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a21_reg[2]' (FDE) to 'a21_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a20_reg[3]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a21_reg[3]' (FDE) to 'a25_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a20_reg[4]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a21_reg[4]' (FDE) to 'a21_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a20_reg[5]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a21_reg[5]' (FDE) to 'a21_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a20_reg[6]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a21_reg[6]' (FDE) to 'a21_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a20_reg[7]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a21_reg[7]' (FDE) to 'a21_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a20_reg[8]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a21_reg[8]' (FDE) to 'a25_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a22_reg[0]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a23_reg[0]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a22_reg[1]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a23_reg[1]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a22_reg[2]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a23_reg[2]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a22_reg[3]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a23_reg[3]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a22_reg[4]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a23_reg[4]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a22_reg[5]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a23_reg[5]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a22_reg[6]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a23_reg[6]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a22_reg[7]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a23_reg[7]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a22_reg[8]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a23_reg[8]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a24_reg[0]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a25_reg[0]' (FDE) to 'a25_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a24_reg[1]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a25_reg[1]' (FDE) to 'a25_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a24_reg[2]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a25_reg[2]' (FDE) to 'a25_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a24_reg[3]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a25_reg[3] )
+INFO: [Synth 8-3886] merging instance 'a24_reg[4]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a25_reg[4]' (FDE) to 'a25_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a24_reg[5]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a25_reg[5]' (FDE) to 'a25_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a24_reg[6]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a25_reg[6]' (FDE) to 'a25_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a24_reg[7]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a25_reg[7]' (FDE) to 'a25_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a24_reg[8]' (FDE) to 'a27_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a25_reg[8] )
+INFO: [Synth 8-3886] merging instance 'a26_reg[0]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a27_reg[0]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a26_reg[1]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a27_reg[1]' (FDE) to 'a27_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a26_reg[2]' (FDE) to 'a27_reg[3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a27_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a27_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a37_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a37_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a44_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a44_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a47_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a46_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a46_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a47_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a57_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a57_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a62_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a63_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a62_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a63_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a70_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a70_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a71_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\a71_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\b04_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\b04_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\n048_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\n048_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\n068_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\n068_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\L18_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\L08_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\g8_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g8_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:58 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |ila_0 |     1|
+|2     |LUT1  |     4|
+|3     |IBUF  |     3|
+|4     |OBUF  |     4|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    11|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 1197.680 ; gain = 409.410
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:01:01 . Memory (MB): peak = 1197.680 ; gain = 310.082
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:01:07 . Memory (MB): peak = 1197.680 ; gain = 409.410
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1205.621 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1209.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+154 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:26 . Memory (MB): peak = 1209.738 ; gain = 687.797
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1209.738 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/VLSI_ARCHITECTURE/MAP Decoder/MAP Decoder.runs/synth_1/Decoder.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Decoder_utilization_synth.rpt -pb Decoder_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 21 02:54:09 2024...

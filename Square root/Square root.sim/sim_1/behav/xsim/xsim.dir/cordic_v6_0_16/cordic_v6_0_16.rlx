@@ -1,0 +1,5 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/VLSI_ARCHITECTURE/Square root/Square root.ip_user_files/ipstatic/hdl/cordic_v6_0_vh_rfs.vhd,1714025246,vhdl,,,,addsub;compare;cordic_atan_rom;cordic_cntr;cordic_ctrl_slice_par;cordic_ctrl_slice_wser;cordic_dat_acc_slice_par;cordic_dat_acc_slice_wser;cordic_eng;cordic_eng_slice_par;cordic_eng_slice_wser;cordic_hdl_comps;cordic_inp_config;cordic_out_config;cordic_pack;cordic_pha_acc_slice_par;cordic_pha_acc_slice_wser;cordic_round;cordic_scale;cordic_shift;cordic_sqrt;cordic_sqrt_mod;cordic_v6_0_16;cordic_v6_0_16_comp;cordic_v6_0_16_synth;cordic_v6_0_16_viv;cordic_v6_0_16_viv_comp;delay;delay_bit,,,,,,,,

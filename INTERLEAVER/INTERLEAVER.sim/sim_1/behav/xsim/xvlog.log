@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VLSI_ARCHITECTURE/INTERLEAVER/INTERLEAVER.srcs/sources_1/new/ACC UNIT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module interl
+INFO: [VRFC 10-311] analyzing module GAMMA
+INFO: [VRFC 10-311] analyzing module ACC1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VLSI_ARCHITECTURE/INTERLEAVER/INTERLEAVER.srcs/sources_1/new/TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB

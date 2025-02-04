@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VLSI_ARCHITECTURE/EIGENMATRIX1/EIGENMATRIX1.srcs/sources_1/new/Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RestoreDV
+INFO: [VRFC 10-2458] undeclared symbol s0, assumed default net type wire [D:/VLSI_ARCHITECTURE/EIGENMATRIX1/EIGENMATRIX1.srcs/sources_1/new/Division.v:34]
+INFO: [VRFC 10-311] analyzing module lsh1
+INFO: [VRFC 10-311] analyzing module sb
+INFO: [VRFC 10-2458] undeclared symbol b1, assumed default net type wire [D:/VLSI_ARCHITECTURE/EIGENMATRIX1/EIGENMATRIX1.srcs/sources_1/new/Division.v:81]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VLSI_ARCHITECTURE/EIGENMATRIX1/EIGENMATRIX1.srcs/sources_1/new/main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix

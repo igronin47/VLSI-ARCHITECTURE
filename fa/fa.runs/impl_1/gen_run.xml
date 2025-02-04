@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1714120582">
+  <File Type="ROUTE-PWR" Name="fa_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="fa.tcl"/>
+  <File Type="BITSTR-BMM" Name="fa_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="fa_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="fa_reports.tcl"/>
+  <File Type="OPT-DCP" Name="fa_opt.dcp"/>
+  <File Type="OPT-DRC" Name="fa_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fa.hwdef"/>
+  <File Type="PWROPT-DCP" Name="fa_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="fa_placed.dcp"/>
+  <File Type="PLACE-IO" Name="fa_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="fa_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fa_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="fa_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fa_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fa_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="fa.bin"/>
+  <File Type="PHYSOPT-DCP" Name="fa_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="fa.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fa_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="fa_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fa_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="fa_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fa_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="fa_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="fa.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fa_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="fa.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fa_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fa_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="fa.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="fa_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="fa_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fa_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fa_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="fa_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fa_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="fa_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="fa.vdi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fa_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fa_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fa_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fa_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fa_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="fa.bit"/>
+  <File Type="BITSTR-RBT" Name="fa.rbt"/>
+  <File Type="BITSTR-NKY" Name="fa.nky"/>
+  <File Type="PDI-FILE" Name="fa.pdi"/>
+  <File Type="RCFI_FILE" Name="fa.rcfi"/>
+  <File Type="CFI_FILE" Name="fa.cfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RNPI_FILE" Name="fa.rnpi"/>
+  <File Type="NPI_FILE" Name="fa.npi"/>
+  <File Type="RBD_FILE" Name="fa.rbd"/>
+  <File Type="BG-BGN" Name="fa.bgn"/>
+  <File Type="BG-DRC" Name="fa.drc"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/fa.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fa"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/fa_c.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/fa_c.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+</GenRun>

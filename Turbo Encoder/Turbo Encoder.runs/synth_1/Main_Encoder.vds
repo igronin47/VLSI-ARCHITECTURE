@@ -1,0 +1,354 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Mar 21 23:18:38 2024
+# Process ID: 160
+# Current directory: D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.runs/synth_1
+# Command line: vivado.exe -log Main_Encoder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main_Encoder.tcl
+# Log file: D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.runs/synth_1/Main_Encoder.vds
+# Journal file: D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Main_Encoder.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 471.758 ; gain = 183.270
+Command: synth_design -top Main_Encoder -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13712 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 731.051 ; gain = 234.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Main_Encoder' [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/Main_Encoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'interl' [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:123]
+	Parameter k bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'GAMMA' [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:173]
+	Parameter K bound to: 14 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ACC1' [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:201]
+	Parameter K bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ACC1' (1#1) [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:201]
+INFO: [Synth 8-6155] done synthesizing module 'GAMMA' (2#1) [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:173]
+WARNING: [Synth 8-6104] Input port 'gout' has an internal driver [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:155]
+WARNING: [Synth 8-7023] instance 'uut' of module 'ACC1' has 6 connections declared, but only 5 given [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:163]
+INFO: [Synth 8-6155] done synthesizing module 'interl' (3#1) [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:123]
+INFO: [Synth 8-6157] synthesizing module 'counter' [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (4#1) [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BRAM' [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'BRAM' (5#1) [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:42]
+INFO: [Synth 8-6157] synthesizing module 'encoder1' [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'encoder1' (6#1) [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/units_b.v:65]
+WARNING: [Synth 8-3848] Net gout in module/entity Main_Encoder does not have driver. [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/Main_Encoder.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Main_Encoder' (7#1) [D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.srcs/sources_1/new/Main_Encoder.v:23]
+WARNING: [Synth 8-3331] design BRAM has unconnected port addr[13]
+WARNING: [Synth 8-3331] design ACC1 has unconnected port rst
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 803.094 ; gain = 306.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 803.094 ; gain = 306.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 803.094 ; gain = 306.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 803.094 ; gain = 306.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 3     
+	   3 Input     14 Bit       Adders := 2     
++---XORs : 
+	   3 Input      1 Bit         XORs := 2     
+	   5 Input      1 Bit         XORs := 2     
++---Registers : 
+	               14 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---RAMs : 
+	               6K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Main_Encoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+Module ACC1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+Module GAMMA 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+Module interl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+Module BRAM 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               6K Bit         RAMs := 1     
+Module encoder1 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 953.391 ; gain = 456.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Main_Encoder | B3/mem_reg | 8 K x 1(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|Main_Encoder | B4/mem_reg | 8 K x 1(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 957.273 ; gain = 460.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Main_Encoder | B3/mem_reg | 8 K x 1(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
+|Main_Encoder | B4/mem_reg | 8 K x 1(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
++-------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7053] The timing for the instance B3/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance B4/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 957.273 ; gain = 460.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 957.375 ; gain = 460.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 957.375 ; gain = 460.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 957.375 ; gain = 460.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 957.375 ; gain = 460.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 957.375 ; gain = 460.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 957.375 ; gain = 460.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    20|
+|3     |LUT1     |     2|
+|4     |LUT2     |    31|
+|5     |LUT3     |    52|
+|6     |LUT4     |    22|
+|7     |LUT5     |    28|
+|8     |LUT6     |     5|
+|9     |RAMB18E1 |     2|
+|10    |FDRE     |    53|
+|11    |IBUF     |    61|
+|12    |OBUF     |    46|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   323|
+|2     |  B3     |BRAM       |     1|
+|3     |  B1     |interl     |   149|
+|4     |    b1   |GAMMA      |    68|
+|5     |      A1 |ACC1_2     |    67|
+|6     |    uut  |ACC1       |    80|
+|7     |  B2     |counter    |    49|
+|8     |  B4     |BRAM_0     |     2|
+|9     |  E1     |encoder1   |     6|
+|10    |  E2     |encoder1_1 |     6|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 957.375 ; gain = 460.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 957.375 ; gain = 460.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 957.375 ; gain = 460.734
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 969.449 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1072.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:35 . Memory (MB): peak = 1072.531 ; gain = 600.773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1072.531 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/VLSI_ARCHITECTURE/Turbo Encoder/Turbo Encoder.runs/synth_1/Main_Encoder.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Main_Encoder_utilization_synth.rpt -pb Main_Encoder_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 21 23:19:46 2024...
